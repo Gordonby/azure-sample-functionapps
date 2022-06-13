@@ -14,6 +14,5 @@ namespace Company.Function
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
             return $"This is a new message sent at {DateTime.Now}";
         }
-
     }
 }
