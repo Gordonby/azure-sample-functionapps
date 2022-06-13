@@ -8,7 +8,7 @@ namespace Company.Function
     public class SendServiceBusMessage
     {
         [FunctionName("SendServiceBusMessage")]
-        [return: ServiceBus("myproj-q", Connection = "ServiceBusConnection")]
+        [return: ServiceBus("%ServiceBusQueueName%", Connection = "ServiceBusConnection")]
         public static string ServiceBusOutput([TimerTrigger("0 */1 * * * *")]TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
