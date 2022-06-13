@@ -1,2 +1,2 @@
 # azure-sample-functionapps
-a test to see if Microsoft.Web/sites/sourcecontrols can be path based.
+used by Microsoft.Web/sites/sourcecontrols on a per PROJECT basis
